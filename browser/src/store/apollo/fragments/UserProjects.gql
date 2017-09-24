@@ -1,0 +1,5 @@
+fragment UserProjects {
+  projects {
+    id
+  }
+}

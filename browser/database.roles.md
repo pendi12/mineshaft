@@ -1,0 +1,6 @@
+Roles
+Annonymous
+Registered
+Organizer
+Administrator
+Developer

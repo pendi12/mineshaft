@@ -1,0 +1,74 @@
+ {
+
+  "customers/:uids":{
+    "authentication": {
+      "nameDisplay": "{String}",
+      "authenticationSource": "{String}(Google, GitHub, Ethereum)"
+    },
+    "identity": {
+      "nameFirst": "{String}",
+      "nameLast": "{String}",
+      "nameDisplay": "{String}",
+      "contactEmail": "{String}",
+      "contactPhone": "{String}",
+      "contactURL": "{String}",
+      "imageProfile": "{String}",
+      "imageBackground": "{String}"
+    },
+    "status": {
+      "active": false,
+      "commerce": {
+        "customer": false,
+        "subscription": false
+      }
+    },
+    "projects": [
+      {
+        "pid": "{String}",
+        "name": "{String}",
+        "status": "{String}(active,abandoned,complete)"
+      }
+    ],
+    "payments": [
+      {
+        "type": "{String}(card, bank)",
+        "identification": "{String}(last-4-digits)",
+        "status": "{String}(active, cancelled, error)"
+      }
+    ],
+    "orders": [
+      {
+        "id": "{String}",
+        "date": "{Date}",
+        "type": "{String}(purchase, subscription)",
+        "items": [
+          {
+            "id": "{String}",
+            "name": "{String}",
+            "price": "{Number}",
+            "parent": "{String}"
+            }
+        ]
+      }
+    ]
+  },
+
+  "orders/:order": [
+    {
+      "id": "{String}",
+      "uid": "{String}",
+      "sid": "{String}",
+      "status": "{String}(active,abandoned,complete)",
+      "date": "{Date}",
+      "items": [
+        {
+          "id": "{String}",
+          "name": "{String}",
+          "price": "{Number}",
+          "parent": "{String}"
+          }
+      ]
+    }
+  ]
+
+}

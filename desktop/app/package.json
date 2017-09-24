@@ -1,0 +1,18 @@
+{
+  "name": "mineshaft",
+  "productName": "mineshaft",
+  "version": "1.0.0",
+  "description": "Mineshaft | Decoupled Mining Interface",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "KamesCG",
+    "email": "kamescg@gmail.com",
+    "url": "https://github.com/kamescg"
+  },
+  "scripts": {
+    "postinstall": "npm rebuild --runtime=electron --target=1.6.6 --disturl=https://atom.io/download/atom-shell --build-from-source"
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}

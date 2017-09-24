@@ -1,0 +1,33 @@
+ {
+
+  "users": {
+    "authentication": {}, 
+    "identity": {}, 
+    "status": {}, 
+    "projects": {}, 
+    "payment": {}, 
+    "orders": {} 
+  },
+
+  "community": {
+    "people": false,
+    "projects": false,
+    "interactions": false,
+    "events": false,
+    "history": false
+  },
+
+  "roles": {
+    "community": {
+      "users": false,
+      "layers": {
+        "people": false,
+        "interactions": false,
+        "projects": false,
+        "events": false,
+        "history": false
+      }
+    }
+  }
+
+}

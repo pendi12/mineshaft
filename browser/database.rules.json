@@ -1,0 +1,55 @@
+{
+  "rules": {
+    /* Disable Everything  */
+    ".read"  : false,
+    ".write" : false,
+
+    /* Self - Secure Accounts  */
+    "user": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+
+    /* Community - Role Permissions  */
+    "community": {
+        ".read": "(root.child('roles').child('community').hasChild(auth.uid))",
+          /* Layers in Community - Role Permissions  */
+          "people": {
+            ".write": "(root.child('roles').child('community').child('layers').child('projects').hasChild(auth.uid))",
+            ".indexOn": ["nameFirst", "nameLast", "relationships"]
+          },
+          "projects": {
+            ".write": "(root.child('roles').child('community').child('layers').child('projects').hasChild(auth.uid))",
+            ".indexOn": ["nameFirst", "nameLast", "relationships"]
+          },
+          "interactions": {
+            ".write": "(root.child('roles').child('community').child('layers').child('interactions').hasChild(auth.uid))",
+            ".indexOn": ["nameFirst", "nameLast", "relationships"]
+          },
+          "events": {
+            ".write": "(root.child('roles').child('community').child('layers').child('events').hasChild(auth.uid))",
+            ".indexOn": ["nameFirst", "nameLast", "relationships"]
+          }
+    },
+
+    /* Organization - Role Permissions  */
+    "organization": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    
+    /* Infrastructure - Role Permissions  */
+    "infrastructure": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+
+  }
+}
+

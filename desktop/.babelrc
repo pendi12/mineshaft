@@ -1,0 +1,36 @@
+{
+  "presets": [
+    ["env", {
+      "targets": { 
+        "browsers": ["last 2 versions", "chrome >= 52"],
+        "node": 7 
+        },
+      "exclude": ["transform-regenerator"],
+      "useBuiltIns": true
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "add-module-exports", 
+    "dynamic-import-webpack"
+    ],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"],
+      "plugins": ["babel-plugin-dev-expression"]
+    },
+    "development": {
+      "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "transform-es2015-classes",
+        ["flow-runtime", {
+          "assert": true,
+          "annotate": true
+        }]
+      ]
+    }
+  }
+}
