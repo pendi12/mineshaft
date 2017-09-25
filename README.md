@@ -13,9 +13,9 @@
  <br /><br />
 </p>
 
-Mineshaft is Javascript for the Desktop, Browser and Server.
+Mineshaft is Javascript + Cryptocurrency for the Desktop, Browser and Server.
 
-The primary focus is to establish a standard for managing mining operation data. The standard will be established primary to make data structures, which can be composed with more advanced data visualization components. For example, an easy-to-reason about GraphQL schema to request for hashing averages over a period of time, which can be passed to D3+VX charts, dendographs, trees, etc...
+The primary focus is to establish a standard for managing mining operation data. The standard will be used to make sharable data structures, which can be composed with more advanced data visualization components. For example, an easy-to-reason about GraphQL schema to request for hashing averages over a period of time, which can be passed to D3+VX charts, dendographs, trees, etc...
 
 The secondary focus is to help abstract away low-level software management for day-to-day mining operators. Developers and Engineers know and love the benefits of Docker. To help mainstream adoption it might be in the best interested to help newcomers and non-technical folks with ready-to-go software environments for code coming from a diverse community of developers.
 
