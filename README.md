@@ -29,9 +29,9 @@ In addition to help facilitate community growth, it would be cool to also techni
 
 1. Dedicated mining stations should have a minimal operating systems with limited (*if any at all*) interface components.
 
-2. Mining operators might benefit from data structures standardization as it relates data storage and composition with data visuailization components.
+2. Mining operators might benefit from data structures standardization as it relates data storage and composition with data visualization components.
 
-3. A decoupled interface/database system for distributed mining station management, across separate networks, seperate from the "logistics" of computer networking, might provide the infrastructure for securely sharing a "pure" representation of "state" as agreed upon by the parts or the whole network.
+3. A decoupled interface/database system for distributed mining station management, across networks, separate from the "logistics" of computer networking, might provide the infrastructure for securely sharing a "pure" representation of "state" as agreed upon by the parts or the whole network.
 
 # Mission
 #### Decentralized cryptocurreny mining operations for maximum scalability, security and value creation.
